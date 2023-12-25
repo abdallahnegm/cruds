@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>CRUDS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>CRUDS</h1>
+        <p>Product Management System</p>
+        <input type="text" id="title" placeholder="title">
+        <div class="ins">
+            <input onkeyup="sums()" type="number" id="price" placeholder="price">
+            <input onkeyup="sums()" type="number" id="taxes" placeholder="taxes">
+            <input onkeyup="sums()" type="number" id="ads" placeholder="ads">
+            <input onkeyup="sums()" type="number" id="disc" placeholder="disc">
+            <small id="total"></small>
+        </div>
+        <div><input type="number" placeholder="count" id="count"></div>
+        <div><input type="text" placeholder="Category" id="Category"></div>
+        <div><button id="Create">Create</button></div>
+        <input type="text" onkeyup="searchdata(this.value)" id="serch" placeholder="search">
+        <div class="btns">
+            <button onclick="searchmood(this.id)" id="titel">Search by Title</button>
+            <button onclick="searchmood(this.id)" id="category">Search by Category</button>
+        </div>
+        <div id="delete"><button id="deleteAll">Delet All Item</button></div>
+        <div class="table">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Ads</th>
+                <th>Discounts</th>
+                <th>Total</th>
+                <th>Category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
